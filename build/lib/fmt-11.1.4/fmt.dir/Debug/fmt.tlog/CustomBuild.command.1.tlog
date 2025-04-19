@@ -1,0 +1,10 @@
+^C:\PROJECTS\C++\AI-EXPERIMENT\LIB\FMT-11.1.4\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/C++/AI-Experiment -BC:/Projects/C++/AI-Experiment/build --check-stamp-file C:/Projects/C++/AI-Experiment/build/lib/fmt-11.1.4/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

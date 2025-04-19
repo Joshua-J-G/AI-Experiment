@@ -1,0 +1,10 @@
+^C:\PROJECTS\C++\AI-EXPERIMENT\BUILD\CMAKEFILES\0FB19A4C970A27FF4107559092FB93BA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/C++/AI-Experiment -BC:/Projects/C++/AI-Experiment/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/C++/AI-Experiment/build/AI-Experiment.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
