@@ -35,6 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Projects/C++/AI-Experiment/build/lib/fmt-11.1.4/cmake_install.cmake")
+  include("C:/Projects/C++/AI-Experiment/build/lib/OpenCL-ICD-Loader-2024.10.24/cmake_install.cmake")
 
 endif()
 

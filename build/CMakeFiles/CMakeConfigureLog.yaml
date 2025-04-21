@@ -286,3 +286,701 @@ events:
       Microsoft (R) Incremental Linker Version 14.42.34435.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-7f9p5j"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-7f9p5j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-7f9p5j'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_42f9f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:03:07 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\cmTC_42f9f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_42f9f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\Debug\\".
+          Creating directory "cmTC_42f9f.dir\\Debug\\cmTC_42f9f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_42f9f.dir\\Debug\\cmTC_42f9f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_42f9f.dir\\Debug\\cmTC_42f9f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_42f9f.dir\\Debug\\\\" /Fd"cmTC_42f9f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_42f9f.dir\\Debug\\\\" /Fd"cmTC_42f9f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\src.c"
+          src.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\cmTC_42f9f.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\cmTC_42f9f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\cmTC_42f9f.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7f9p5j\\cmTC_42f9f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.36
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-uarrqj"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-uarrqj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-uarrqj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_12369.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:03:08 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\cmTC_12369.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_12369.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\Debug\\".
+          Creating directory "cmTC_12369.dir\\Debug\\cmTC_12369.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_12369.dir\\Debug\\cmTC_12369.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_12369.dir\\Debug\\cmTC_12369.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12369.dir\\Debug\\\\" /Fd"cmTC_12369.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12369.dir\\Debug\\\\" /Fd"cmTC_12369.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\Debug\\cmTC_12369.exe" /INCREMENTAL /ILK:"cmTC_12369.dir\\Debug\\cmTC_12369.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-uarrqj/Debug/cmTC_12369.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-uarrqj/Debug/cmTC_12369.lib" /MACHINE:X64  /machine:x64 cmTC_12369.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\cmTC_12369.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\cmTC_12369.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\cmTC_12369.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uarrqj\\cmTC_12369.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.26
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dvfhm9"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dvfhm9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dvfhm9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_af4ac.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:03:08 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\cmTC_af4ac.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_af4ac.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\Debug\\".
+          Creating directory "cmTC_af4ac.dir\\Debug\\cmTC_af4ac.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_af4ac.dir\\Debug\\cmTC_af4ac.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_af4ac.dir\\Debug\\cmTC_af4ac.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_af4ac.dir\\Debug\\\\" /Fd"cmTC_af4ac.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_af4ac.dir\\Debug\\\\" /Fd"cmTC_af4ac.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\Debug\\cmTC_af4ac.exe" /INCREMENTAL /ILK:"cmTC_af4ac.dir\\Debug\\cmTC_af4ac.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dvfhm9/Debug/cmTC_af4ac.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dvfhm9/Debug/cmTC_af4ac.lib" /MACHINE:X64  /machine:x64 cmTC_af4ac.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\cmTC_af4ac.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\cmTC_af4ac.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\cmTC_af4ac.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvfhm9\\cmTC_af4ac.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.25
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt:65 (check_function_exists)"
+    checks:
+      - "Looking for secure_getenv"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dwwjr1"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dwwjr1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/cmake"
+    buildResult:
+      variable: "HAVE_SECURE_GETENV"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dwwjr1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7c837.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:03:09 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\cmTC_7c837.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7c837.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\Debug\\".
+          Creating directory "cmTC_7c837.dir\\Debug\\cmTC_7c837.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7c837.dir\\Debug\\cmTC_7c837.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7c837.dir\\Debug\\cmTC_7c837.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=secure_getenv /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c837.dir\\Debug\\\\" /Fd"cmTC_7c837.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=secure_getenv /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c837.dir\\Debug\\\\" /Fd"cmTC_7c837.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\Debug\\cmTC_7c837.exe" /INCREMENTAL /ILK:"cmTC_7c837.dir\\Debug\\cmTC_7c837.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dwwjr1/Debug/cmTC_7c837.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-dwwjr1/Debug/cmTC_7c837.lib" /MACHINE:X64  /machine:x64 cmTC_7c837.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol secure_getenv referenced in function main [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\cmTC_7c837.vcxproj]
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\Debug\\cmTC_7c837.exe : fatal error LNK1120: 1 unresolved externals [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\cmTC_7c837.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\cmTC_7c837.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\cmTC_7c837.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol secure_getenv referenced in function main [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\cmTC_7c837.vcxproj]
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\Debug\\cmTC_7c837.exe : fatal error LNK1120: 1 unresolved externals [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dwwjr1\\cmTC_7c837.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.29
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt:66 (check_function_exists)"
+    checks:
+      - "Looking for __secure_getenv"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-cjis70"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-cjis70"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/cmake"
+    buildResult:
+      variable: "HAVE___SECURE_GETENV"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-cjis70'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_11c5c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:03:09 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\cmTC_11c5c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_11c5c.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\Debug\\".
+          Creating directory "cmTC_11c5c.dir\\Debug\\cmTC_11c5c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_11c5c.dir\\Debug\\cmTC_11c5c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_11c5c.dir\\Debug\\cmTC_11c5c.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__secure_getenv /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_11c5c.dir\\Debug\\\\" /Fd"cmTC_11c5c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__secure_getenv /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_11c5c.dir\\Debug\\\\" /Fd"cmTC_11c5c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\Debug\\cmTC_11c5c.exe" /INCREMENTAL /ILK:"cmTC_11c5c.dir\\Debug\\cmTC_11c5c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-cjis70/Debug/cmTC_11c5c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-cjis70/Debug/cmTC_11c5c.lib" /MACHINE:X64  /machine:x64 cmTC_11c5c.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol __secure_getenv referenced in function main [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\cmTC_11c5c.vcxproj]
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\Debug\\cmTC_11c5c.exe : fatal error LNK1120: 1 unresolved externals [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\cmTC_11c5c.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\cmTC_11c5c.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\cmTC_11c5c.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol __secure_getenv referenced in function main [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\cmTC_11c5c.vcxproj]
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\Debug\\cmTC_11c5c.exe : fatal error LNK1120: 1 unresolved externals [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cjis70\\cmTC_11c5c.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.28
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:4 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_3_0"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-ywxwd0"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-ywxwd0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OPENCL_VERSION_3_0"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-ywxwd0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_44f83.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:04:03 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\cmTC_44f83.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_44f83.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\Debug\\".
+          Creating directory "cmTC_44f83.dir\\Debug\\cmTC_44f83.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_44f83.dir\\Debug\\cmTC_44f83.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_44f83.dir\\Debug\\cmTC_44f83.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_44f83.dir\\Debug\\\\" /Fd"cmTC_44f83.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_44f83.dir\\Debug\\\\" /Fd"cmTC_44f83.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\cmTC_44f83.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\cmTC_44f83.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\cmTC_44f83.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ywxwd0\\cmTC_44f83.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.20
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:4 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_2_2"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-sdnvau"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-sdnvau"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OPENCL_VERSION_2_2"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-sdnvau'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d6c95.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:04:03 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\cmTC_d6c95.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d6c95.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\Debug\\".
+          Creating directory "cmTC_d6c95.dir\\Debug\\cmTC_d6c95.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d6c95.dir\\Debug\\cmTC_d6c95.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d6c95.dir\\Debug\\cmTC_d6c95.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d6c95.dir\\Debug\\\\" /Fd"cmTC_d6c95.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d6c95.dir\\Debug\\\\" /Fd"cmTC_d6c95.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\cmTC_d6c95.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\cmTC_d6c95.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\cmTC_d6c95.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sdnvau\\cmTC_d6c95.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.20
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:4 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_2_1"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-xgv6xw"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-xgv6xw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OPENCL_VERSION_2_1"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-xgv6xw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e46e0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:04:04 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\cmTC_e46e0.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e46e0.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\Debug\\".
+          Creating directory "cmTC_e46e0.dir\\Debug\\cmTC_e46e0.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e46e0.dir\\Debug\\cmTC_e46e0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e46e0.dir\\Debug\\cmTC_e46e0.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e46e0.dir\\Debug\\\\" /Fd"cmTC_e46e0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e46e0.dir\\Debug\\\\" /Fd"cmTC_e46e0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\cmTC_e46e0.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\cmTC_e46e0.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\cmTC_e46e0.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgv6xw\\cmTC_e46e0.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.20
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:4 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_2_0"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-7lm6jf"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-7lm6jf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OPENCL_VERSION_2_0"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-7lm6jf'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_28098.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:04:04 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\cmTC_28098.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_28098.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\Debug\\".
+          Creating directory "cmTC_28098.dir\\Debug\\cmTC_28098.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_28098.dir\\Debug\\cmTC_28098.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_28098.dir\\Debug\\cmTC_28098.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28098.dir\\Debug\\\\" /Fd"cmTC_28098.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28098.dir\\Debug\\\\" /Fd"cmTC_28098.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\cmTC_28098.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\cmTC_28098.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\cmTC_28098.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7lm6jf\\cmTC_28098.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.20
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:4 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_1_2"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-ll4dfc"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-ll4dfc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OPENCL_VERSION_1_2"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-ll4dfc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_efcf2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:04:04 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\cmTC_efcf2.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_efcf2.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\Debug\\".
+          Creating directory "cmTC_efcf2.dir\\Debug\\cmTC_efcf2.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_efcf2.dir\\Debug\\cmTC_efcf2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_efcf2.dir\\Debug\\cmTC_efcf2.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_efcf2.dir\\Debug\\\\" /Fd"cmTC_efcf2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_efcf2.dir\\Debug\\\\" /Fd"cmTC_efcf2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\cmTC_efcf2.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\cmTC_efcf2.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\cmTC_efcf2.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ll4dfc\\cmTC_efcf2.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.19
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:4 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_1_1"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-fro4su"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-fro4su"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OPENCL_VERSION_1_1"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-fro4su'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7c5f5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:04:04 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\cmTC_7c5f5.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7c5f5.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\Debug\\".
+          Creating directory "cmTC_7c5f5.dir\\Debug\\cmTC_7c5f5.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7c5f5.dir\\Debug\\cmTC_7c5f5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7c5f5.dir\\Debug\\cmTC_7c5f5.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c5f5.dir\\Debug\\\\" /Fd"cmTC_7c5f5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c5f5.dir\\Debug\\\\" /Fd"cmTC_7c5f5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\cmTC_7c5f5.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\cmTC_7c5f5.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\cmTC_7c5f5.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fro4su\\cmTC_7c5f5.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.19
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:4 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_1_0"
+    directories:
+      source: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-kkf8os"
+      binary: "C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-kkf8os"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OPENCL_VERSION_1_0"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Projects/C++/AI-Experiment/build/CMakeFiles/CMakeScratch/TryCompile-kkf8os'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e5546.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 20/04/2025 4:04:05 PM.
+        
+        Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\cmTC_e5546.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e5546.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\Debug\\".
+          Creating directory "cmTC_e5546.dir\\Debug\\cmTC_e5546.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e5546.dir\\Debug\\cmTC_e5546.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e5546.dir\\Debug\\cmTC_e5546.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e5546.dir\\Debug\\\\" /Fd"cmTC_e5546.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e5546.dir\\Debug\\\\" /Fd"cmTC_e5546.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\cmTC_e5546.vcxproj]
+        Done Building Project "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\cmTC_e5546.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\cmTC_e5546.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h': No such file or directory [C:\\Projects\\C++\\AI-Experiment\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkf8os\\cmTC_e5546.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.20
+        
+      exitCode: 1
+...

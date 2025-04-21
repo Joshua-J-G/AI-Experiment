@@ -4,11 +4,28 @@
     <ClCompile Include="C:\Projects\C++\AI-Experiment\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Projects\C++\AI-Experiment\src\Neuron\Neuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\C++\AI-Experiment\src\Neuron\NeuronMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Projects\C++\AI-Experiment\include\Neuron\Neuron.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\C++\AI-Experiment\include\Neuron\NeuronMap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Projects\C++\AI-Experiment\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{85F8B176-4669-3ABC-80B2-94F7B0E051F6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{79799172-1687-3E11-A60C-A1692436E718}</UniqueIdentifier>
     </Filter>

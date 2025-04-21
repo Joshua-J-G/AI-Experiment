@@ -1,0 +1,39 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "OpenCL::@62df9afd248b7521e4ff"
+		},
+		{
+			"id" : "cllayerinfo::@62df9afd248b7521e4ff"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@62df9afd248b7521e4ff",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "lib/OpenCL-ICD-Loader-2024.10.24",
+		"source" : "lib/OpenCL-ICD-Loader-2024.10.24"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

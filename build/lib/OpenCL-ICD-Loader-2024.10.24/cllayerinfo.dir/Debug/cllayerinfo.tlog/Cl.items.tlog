@@ -1,0 +1,9 @@
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\cllayerinfo.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\cllayerinfo.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\icd.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\icd_dispatch.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd_dispatch.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\icd_dispatch_generated.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd_dispatch_generated.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\windows\icd_windows.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd_windows.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\windows\icd_windows_dxgk.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd_windows_dxgk.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\windows\icd_windows_envvars.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd_windows_envvars.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\windows\icd_windows_hkr.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd_windows_hkr.obj
+C:\Projects\C++\AI-Experiment\lib\OpenCL-ICD-Loader-2024.10.24\loader\windows\icd_windows_apppackage.c;C:\Projects\C++\AI-Experiment\build\lib\OpenCL-ICD-Loader-2024.10.24\cllayerinfo.dir\Debug\icd_windows_apppackage.obj

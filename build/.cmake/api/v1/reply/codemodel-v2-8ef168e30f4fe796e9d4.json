@@ -1,0 +1,696 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"build" : "lib/fmt-11.1.4",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.fmt-11.1.4-Debug-f09f194fd63ddd741a6a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/fmt-11.1.4",
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"build" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.OpenCL-ICD-Loader-2024.10.24-Debug-41e68b8e31d338d99258.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AI-Experiment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "FMT",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "OpenCL-ICD-Loader",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AI-Experiment::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AI-Experiment-Debug-ae68511f388a1854d374.json",
+					"name" : "AI-Experiment",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-e18a494d3f735215a243.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-ALL_BUILD-Debug-d13491619c2ae745694c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-ALL_BUILD-Debug-8f4eaff43a348b6697ff.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "OpenCL::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-OpenCL-Debug-fc99c3b3b0346fd819ee.json",
+					"name" : "OpenCL",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-e0a2a64f748e123c1fdc.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cllayerinfo::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-cllayerinfo-Debug-81bcedd421e68b9d549c.json",
+					"name" : "cllayerinfo",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fmt::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-fmt-Debug-fc507d7c16bfc5418311.json",
+					"name" : "fmt",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"build" : "lib/fmt-11.1.4",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.fmt-11.1.4-Release-f2914e72a5335d8edaf8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/fmt-11.1.4",
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"build" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.OpenCL-ICD-Loader-2024.10.24-Release-850c80bbda02cce3c390.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AI-Experiment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "FMT",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "OpenCL-ICD-Loader",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AI-Experiment::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AI-Experiment-Release-8812102e710dbddb282b.json",
+					"name" : "AI-Experiment",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-e18a494d3f735215a243.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-ALL_BUILD-Release-d13491619c2ae745694c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-ALL_BUILD-Release-8f4eaff43a348b6697ff.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "OpenCL::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-OpenCL-Release-21617c03af0cf9837c31.json",
+					"name" : "OpenCL",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-e0a2a64f748e123c1fdc.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cllayerinfo::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-cllayerinfo-Release-5088bcccfe45dd6957df.json",
+					"name" : "cllayerinfo",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fmt::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-fmt-Release-0bfca834d10b1c97be36.json",
+					"name" : "fmt",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"build" : "lib/fmt-11.1.4",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.fmt-11.1.4-MinSizeRel-d2924e5a7acc4686c672.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/fmt-11.1.4",
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"build" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.OpenCL-ICD-Loader-2024.10.24-MinSizeRel-2cc702c6736fa4b6f4a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AI-Experiment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "FMT",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "OpenCL-ICD-Loader",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AI-Experiment::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AI-Experiment-MinSizeRel-c06d722dc52e8af21642.json",
+					"name" : "AI-Experiment",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-e18a494d3f735215a243.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-d13491619c2ae745694c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-8f4eaff43a348b6697ff.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "OpenCL::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-OpenCL-MinSizeRel-48f4d51d7f34f356c055.json",
+					"name" : "OpenCL",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-e0a2a64f748e123c1fdc.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cllayerinfo::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-cllayerinfo-MinSizeRel-8d2d65316335cfeadb19.json",
+					"name" : "cllayerinfo",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fmt::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-fmt-MinSizeRel-9874ec2f77498230afd9.json",
+					"name" : "fmt",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"build" : "lib/fmt-11.1.4",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.fmt-11.1.4-RelWithDebInfo-d6d25b9cec5b84124702.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/fmt-11.1.4",
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"build" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.OpenCL-ICD-Loader-2024.10.24-RelWithDebInfo-2f3e5edddbb0feb78fcc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "lib/OpenCL-ICD-Loader-2024.10.24",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AI-Experiment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "FMT",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "OpenCL-ICD-Loader",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AI-Experiment::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AI-Experiment-RelWithDebInfo-c57b417c0fcfd0277af7.json",
+					"name" : "AI-Experiment",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-e18a494d3f735215a243.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-d13491619c2ae745694c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-8f4eaff43a348b6697ff.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "OpenCL::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-OpenCL-RelWithDebInfo-02fa4b227972833e4f37.json",
+					"name" : "OpenCL",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-e0a2a64f748e123c1fdc.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cllayerinfo::@62df9afd248b7521e4ff",
+					"jsonFile" : "target-cllayerinfo-RelWithDebInfo-64d1f432fa2a98dc02ce.json",
+					"name" : "cllayerinfo",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fmt::@3932b0770e0cff7d9371",
+					"jsonFile" : "target-fmt-RelWithDebInfo-c58f45d342ffcc9f4f52.json",
+					"name" : "fmt",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Projects/C++/AI-Experiment/build",
+		"source" : "C:/Projects/C++/AI-Experiment"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

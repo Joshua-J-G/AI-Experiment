@@ -1,0 +1,225 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"lib/OpenCL-ICD-Loader-2024.10.24/cmake/Package.cmake",
+			"lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 227,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 233,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 242,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 261,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 268,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 281,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 288,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "pkgconfig_install",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/lib/OpenCL-ICD-Loader-2024.10.24/pkgconfig_install/OpenCL.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "dev",
+			"destination" : "lib/pkgconfig",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"build/lib/OpenCL-ICD-Loader-2024.10.24/pkgconfig_package/OpenCL.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/OpenCL-ICD-Loader-2024.10.24/Debug/OpenCL.lib"
+			],
+			"targetId" : "OpenCL::@62df9afd248b7521e4ff",
+			"targetIndex" : 4,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"lib/OpenCL-ICD-Loader-2024.10.24/Debug/OpenCL.dll"
+			],
+			"targetId" : "OpenCL::@62df9afd248b7521e4ff",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"build/lib/OpenCL-ICD-Loader-2024.10.24/Debug/OpenCL.pdb"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "cllayerinfo",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"lib/OpenCL-ICD-Loader-2024.10.24/Debug/cllayerinfo.exe"
+			],
+			"targetId" : "cllayerinfo::@62df9afd248b7521e4ff",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "dev",
+			"destination" : "share/cmake/OpenCLICDLoader",
+			"exportName" : "OpenCLICDLoaderTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "OpenCL::@62df9afd248b7521e4ff",
+					"index" : 4
+				}
+			],
+			"paths" : 
+			[
+				"lib/OpenCL-ICD-Loader-2024.10.24/CMakeFiles/Export/0640f9797998f17d714471c1b4626b35/OpenCLICDLoaderTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "dev",
+			"destination" : "share/cmake/OpenCLICDLoader",
+			"paths" : 
+			[
+				"build/lib/OpenCL-ICD-Loader-2024.10.24/OpenCLICDLoader/OpenCLICDLoaderConfig.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "dev",
+			"destination" : "share/cmake/OpenCLICDLoader",
+			"paths" : 
+			[
+				"build/lib/OpenCL-ICD-Loader-2024.10.24/OpenCLICDLoader/OpenCLICDLoaderConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/OpenCL-ICD-Loader-2024.10.24/Debug/OpenCL.lib"
+			],
+			"targetId" : "OpenCL::@62df9afd248b7521e4ff",
+			"targetIndex" : 4,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"lib/OpenCL-ICD-Loader-2024.10.24/Debug/OpenCL.dll"
+			],
+			"targetId" : "OpenCL::@62df9afd248b7521e4ff",
+			"targetIndex" : 4,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/OpenCL-ICD-Loader-2024.10.24",
+		"source" : "lib/OpenCL-ICD-Loader-2024.10.24"
+	}
+}

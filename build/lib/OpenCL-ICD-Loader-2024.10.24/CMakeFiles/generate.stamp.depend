@@ -1,0 +1,26 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Templates/CPackConfig.cmake.in
+C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/CMakeLists.txt
+C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/OpenCL.pc.in
+C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/cmake/JoinPaths.cmake
+C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/cmake/Package.cmake
+C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/cmake/PackageSetup.cmake
+C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/loader/icd_cmake_config.h.in
+C:/Projects/LIBS/OpenCL-Headers/share/cmake/OpenCLHeaders/OpenCLHeadersConfig.cmake
+C:/Projects/LIBS/OpenCL-Headers/share/cmake/OpenCLHeaders/OpenCLHeadersConfigVersion.cmake
+C:/Projects/LIBS/OpenCL-Headers/share/cmake/OpenCLHeaders/OpenCLHeadersTargets.cmake

@@ -257,11 +257,47 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=C:/Projects/vcpkg/scripts/buildsystems/vcpkg.cmake
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Enable to build 7-Zip packages
+CPACK_BINARY_7Z:BOOL=OFF
+
+//Enable to build IFW packages
+CPACK_BINARY_IFW:BOOL=OFF
+
+//Enable to build Inno Setup packages
+CPACK_BINARY_INNOSETUP:BOOL=OFF
+
+//Enable to build NSIS packages
+CPACK_BINARY_NSIS:BOOL=ON
+
+//Enable to build NuGet packages
+CPACK_BINARY_NUGET:BOOL=OFF
+
+//Enable to build WiX packages
+CPACK_BINARY_WIX:BOOL=OFF
+
+//Enable to build ZIP packages
+CPACK_BINARY_ZIP:BOOL=OFF
+
+//Enable to build 7-Zip source packages
+CPACK_SOURCE_7Z:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=ON
+
+//Enable building cllayerinfo tool
+ENABLE_OPENCL_LAYERINFO:BOOL=ON
+
+//Enable OpenCL Layers
+ENABLE_OPENCL_LAYERS:BOOL=ON
 
 //Value Computed by CMake
 FMT_BINARY_DIR:STATIC=C:/Projects/C++/AI-Experiment/build/lib/fmt-11.1.4
@@ -327,6 +363,36 @@ FMT_UNICODE:BOOL=ON
 
 //Halt the compilation with an error on compiler warnings.
 FMT_WERROR:BOOL=OFF
+
+//Build OpenCL ICD Loader as shared library
+OPENCL_ICD_LOADER_BUILD_SHARED_LIBS:BOOL=ON
+
+//Enable support for OpenCL ICD Loader testing.
+OPENCL_ICD_LOADER_BUILD_TESTING:BOOL=OFF
+
+//Path to OpenCL Headers
+OPENCL_ICD_LOADER_HEADERS_DIR:PATH=C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24/inc
+
+//Value Computed by CMake
+OpenCL-ICD-Loader_BINARY_DIR:STATIC=C:/Projects/C++/AI-Experiment/build/lib/OpenCL-ICD-Loader-2024.10.24
+
+//Value Computed by CMake
+OpenCL-ICD-Loader_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+OpenCL-ICD-Loader_SOURCE_DIR:STATIC=C:/Projects/C++/AI-Experiment/lib/OpenCL-ICD-Loader-2024.10.24
+
+//The directory containing a CMake configuration file for OpenCLHeaders.
+OpenCLHeaders_DIR:PATH=OpenCLHeaders_DIR-NOTFOUND
+
+//Path to a file.
+OpenCL_INCLUDE_DIR:PATH=OpenCL_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+OpenCL_LIBRARY:FILEPATH=OpenCL_LIBRARY-NOTFOUND
+
+//The directory containing a CMake configuration file for boost.
+boost_DIR:PATH=boost_DIR-NOTFOUND
 
 
 ########################
@@ -395,6 +461,12 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/Projects/C++/AI-Experiment
@@ -445,7 +517,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
@@ -491,6 +563,50 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_7Z
+CPACK_BINARY_7Z-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_IFW
+CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_INNOSETUP
+CPACK_BINARY_INNOSETUP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_NSIS
+CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_NUGET
+CPACK_BINARY_NUGET-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_WIX
+CPACK_BINARY_WIX-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_ZIP
+CPACK_BINARY_ZIP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_7Z
+CPACK_SOURCE_7Z-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
+//Details about finding OpenCL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCL:INTERNAL=[C:/Projects/C++/AI-Experiment/lib/OpenCL-SDK-v2024.10.24-Win-x64/lib/OpenCL.lib][C:/Projects/C++/AI-Experiment/lib/OpenCL-SDK-v2024.10.24-Win-x64/include][v()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Have function secure_getenv
+HAVE_SECURE_GETENV:INTERNAL=
+//Have function __secure_getenv
+HAVE___SECURE_GETENV:INTERNAL=
+//Have symbol CL_VERSION_1_0
+OPENCL_VERSION_1_0:INTERNAL=
+//Have symbol CL_VERSION_1_1
+OPENCL_VERSION_1_1:INTERNAL=
+//Have symbol CL_VERSION_1_2
+OPENCL_VERSION_1_2:INTERNAL=
+//Have symbol CL_VERSION_2_0
+OPENCL_VERSION_2_0:INTERNAL=
+//Have symbol CL_VERSION_2_1
+OPENCL_VERSION_2_1:INTERNAL=
+//Have symbol CL_VERSION_2_2
+OPENCL_VERSION_2_2:INTERNAL=
+//Have symbol CL_VERSION_3_0
+OPENCL_VERSION_3_0:INTERNAL=
+//ADVANCED property for variable: OpenCL_INCLUDE_DIR
+OpenCL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCL_LIBRARY
+OpenCL_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/AI-Experiment
 

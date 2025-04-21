@@ -2,15 +2,18 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "cmake",
-            "label": "CMake: build",
-            "command": "build",
-            "targets": [
-                "ALL_BUILD"
+            "label": "Build with Ninja",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build",
+                "--parallel",
+                "10"
             ],
             "group": "build",
             "problemMatcher": [],
-            "detail": "CMake template build task"
+            "detail": "Build using Ninja generator"
         }
     ]
 }

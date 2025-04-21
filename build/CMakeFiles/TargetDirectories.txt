@@ -1,7 +1,14 @@
 C:/Projects/C++/AI-Experiment/build/CMakeFiles/AI-Experiment.dir
+C:/Projects/C++/AI-Experiment/build/CMakeFiles/PACKAGE.dir
 C:/Projects/C++/AI-Experiment/build/CMakeFiles/INSTALL.dir
 C:/Projects/C++/AI-Experiment/build/CMakeFiles/ALL_BUILD.dir
 C:/Projects/C++/AI-Experiment/build/CMakeFiles/ZERO_CHECK.dir
 C:/Projects/C++/AI-Experiment/build/lib/fmt-11.1.4/CMakeFiles/fmt.dir
+C:/Projects/C++/AI-Experiment/build/lib/fmt-11.1.4/CMakeFiles/PACKAGE.dir
 C:/Projects/C++/AI-Experiment/build/lib/fmt-11.1.4/CMakeFiles/INSTALL.dir
 C:/Projects/C++/AI-Experiment/build/lib/fmt-11.1.4/CMakeFiles/ALL_BUILD.dir
+C:/Projects/C++/AI-Experiment/build/lib/OpenCL-ICD-Loader-2024.10.24/CMakeFiles/OpenCL.dir
+C:/Projects/C++/AI-Experiment/build/lib/OpenCL-ICD-Loader-2024.10.24/CMakeFiles/cllayerinfo.dir
+C:/Projects/C++/AI-Experiment/build/lib/OpenCL-ICD-Loader-2024.10.24/CMakeFiles/PACKAGE.dir
+C:/Projects/C++/AI-Experiment/build/lib/OpenCL-ICD-Loader-2024.10.24/CMakeFiles/INSTALL.dir
+C:/Projects/C++/AI-Experiment/build/lib/OpenCL-ICD-Loader-2024.10.24/CMakeFiles/ALL_BUILD.dir

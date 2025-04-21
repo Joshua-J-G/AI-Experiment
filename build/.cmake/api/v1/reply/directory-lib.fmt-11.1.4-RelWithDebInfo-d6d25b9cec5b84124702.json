@@ -1,0 +1,129 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/fmt-11.1.4/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 434,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 449,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 452,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 456,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "fmt-core",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/fmt-11.1.4/RelWithDebInfo/fmt.lib"
+			],
+			"targetId" : "fmt::@3932b0770e0cff7d9371",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "fmt-core",
+			"destination" : "include/fmt",
+			"paths" : 
+			[
+				"lib/fmt-11.1.4/include/fmt/args.h",
+				"lib/fmt-11.1.4/include/fmt/base.h",
+				"lib/fmt-11.1.4/include/fmt/chrono.h",
+				"lib/fmt-11.1.4/include/fmt/color.h",
+				"lib/fmt-11.1.4/include/fmt/compile.h",
+				"lib/fmt-11.1.4/include/fmt/core.h",
+				"lib/fmt-11.1.4/include/fmt/format.h",
+				"lib/fmt-11.1.4/include/fmt/format-inl.h",
+				"lib/fmt-11.1.4/include/fmt/os.h",
+				"lib/fmt-11.1.4/include/fmt/ostream.h",
+				"lib/fmt-11.1.4/include/fmt/printf.h",
+				"lib/fmt-11.1.4/include/fmt/ranges.h",
+				"lib/fmt-11.1.4/include/fmt/std.h",
+				"lib/fmt-11.1.4/include/fmt/xchar.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "fmt-core",
+			"destination" : "lib/cmake/fmt",
+			"paths" : 
+			[
+				"build/lib/fmt-11.1.4/fmt-config.cmake",
+				"build/lib/fmt-11.1.4/fmt-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "fmt-core",
+			"destination" : "lib/cmake/fmt",
+			"exportName" : "fmt-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "fmt::@3932b0770e0cff7d9371",
+					"index" : 7
+				},
+				{
+					"id" : "fmt-header-only::@3932b0770e0cff7d9371",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"lib/fmt-11.1.4/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "fmt-core",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/lib/fmt-11.1.4/fmt.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/fmt-11.1.4",
+		"source" : "lib/fmt-11.1.4"
+	}
+}

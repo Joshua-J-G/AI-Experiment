@@ -14,7 +14,7 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "console": "externalTerminal",
-            "preLaunchTask": "CMake: build",
+            "preLaunchTask": "Build with Ninja",
             "logging": {
             "moduleLoad": false,
             "trace": true,
